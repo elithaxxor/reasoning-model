@@ -1,0 +1,35 @@
+<html><head><title>Trading Bot Report</title>
+<style>body{font-family:sans-serif;}table{width:100%;border-collapse:collapse;}th,td{padding:8px;border:1px solid #ddd;}th{background:#333;color:#fff;}tr:nth-child(even){background:#f9f9f9}</style>
+</head><body>
+<h1>Trading Report - 20250608_180541</h1>
+<h2>BTC/USD</h2>
+<p><strong>Consensus Signal:</strong> <span style='color:blue'>SELL</span></p>
+<h3>TA (Model: o4-mini-high)</h3>
+<table>
+<tr><th>Prompt</th><th>Response</th><th>Time (s)</th><th>Est. Cost ($)</th></tr>
+<tr><td>RSI divergence check for BTC/USD: [44.58649416 49.72072852 50.48630049 59.3622632  61.81922423 61.41096684
+ 61.69143284 62.22365561 62.51741056 61.99821717 63.18552806 63.44393115
+ 64.49595999 65.40405249 64.16892535 64.16892535 64.16892535 64.16892535
+ 64.16892535 64.16892535 40.35294452 42.50846744 49.5355062  49.51879304
+ 49.53712879 56.20154313 57.09567393 57.24409334 57.26178417 57.134491
+ 57.134491   56.55129817 56.55129817 45.03554495 40.18100122 28.88270503
+ 37.57944541 40.89144005 46.28698873 49.84210047 49.86005976 50.60290869
+ 50.60290869 50.58062405 50.60405048 51.51976487 73.70000668 66.71759093
+ 35.5200421  34.2584567 ]</td><td>{"error": "Error code: 404 - {'error': {'message': 'The model `o4-mini-high` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}"}</td><td>3.41</td><td>0.00003</td></tr>
+</table><br>
+<h3>MACRO (Model: gpt-4.1)</h3>
+<table>
+<tr><th>Prompt</th><th>Response</th><th>Time (s)</th><th>Est. Cost ($)</th></tr>
+<tr><td>VWAP/macro pattern analysis for BTC/USD</td><td>{"error": "Error code: 403 - {'error': {'message': 'Project `proj_ESbcsASn6zwvygPHEEOHRjad` does not have access to model `gpt-4.1`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}"}</td><td>3.35</td><td>0.00003</td></tr>
+</table><br>
+<h3>OPTIONS (Model: o3-pro)</h3>
+<table>
+<tr><th>Prompt</th><th>Response</th><th>Time (s)</th><th>Est. Cost ($)</th></tr>
+<tr><td>Calculate Black‑Scholes params for BTC/USD</td><td>{"error": "Error code: 403 - {'error': {'message': 'Project `proj_ESbcsASn6zwvygPHEEOHRjad` does not have access to model `o3-pro`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}"}</td><td>3.38</td><td>0.00014</td></tr>
+</table><br>
+<h3>SENTIMENT (Model: gpt-4.5)</h3>
+<table>
+<tr><th>Prompt</th><th>Response</th><th>Time (s)</th><th>Est. Cost ($)</th></tr>
+<tr><td>Fear/greed sentiment from last 200 tweets for BTC/USD</td><td>{"error": "Error code: 404 - {'error': {'message': 'The model `gpt-4.5` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}"}</td><td>3.51</td><td>0.00003</td></tr>
+</table><br>
+</body></html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="dashboard-header">
+            <h1>Cryptocurrency Dashboard</h1>
+            <div class="market-status">
+                <span class="status status--success">Market Open</span>
+                <span class="live-indicator"></span>
+            </div>
+        </header>
+
+        <nav class="tab-navigation">
+            <button class="tab-btn active" data-tab="meme-coins">Meme Coins</button>
+            <button class="tab-btn" data-tab="top-50">Top 50 Crypto</button>
+        </nav>
+
+        <!-- Meme Coins Tab -->
+        <div id="meme-coins" class="tab-content active">
+            <div class="tab-header">
+                <h2>Meme Coins Dashboard</h2>
+                <div class="controls">
+                    <input type="text" class="form-control search-input" placeholder="Search meme coins..." id="meme-search">
+                    <select class="form-control sort-select" id="meme-sort">
+                        <option value="market_cap">Market Cap</option>
+                        <option value="price">Price</option>
+                        <option value="change_24h">24h Change</option>
+                        <option value="sentiment_score">Sentiment</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Meme Coins Market Overview</h3>
+                        <canvas id="memeCoinsChart" height="300"></canvas>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Sentiment Analysis</h3>
+                        <canvas id="sentimentChart" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__body">
+                    <div class="table-container">
+                        <table class="crypto-table" id="meme-table">
+                            <thead>
+                                <tr>
+                                    <th>Coin</th>
+                                    <th>Price</th>
+                                    <th>24h Change</th>
+                                    <th>Market Cap</th>
+                                    <th>Volume</th>
+                                    <th>Sentiment</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="meme-table-body">
+                                <!-- Populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top 50 Crypto Tab -->
+        <div id="top-50" class="tab-content">
+            <div class="tab-header">
+                <h2>Top 50 Cryptocurrencies</h2>
+                <div class="controls">
+                    <input type="text" class="form-control search-input" placeholder="Search cryptocurrencies..." id="crypto-search">
+                    <select class="form-control sort-select" id="crypto-sort">
+                        <option value="rank">Rank</option>
+                        <option value="market_cap">Market Cap</option>
+                        <option value="price">Price</option>
+                        <option value="change_24h">24h Change</option>
+                        <option value="volume_24h">Volume</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Market Cap Distribution</h3>
+                        <canvas id="marketCapChart" height="300"></canvas>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Price Performance</h3>
+                        <canvas id="performanceChart" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__body">
+                    <div class="table-container">
+                        <table class="crypto-table" id="crypto-table">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Coin</th>
+                                    <th>Price</th>
+                                    <th>24h Change</th>
+                                    <th>Market Cap</th>
+                                    <th>Volume</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="crypto-table-body">
+                                <!-- Populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alert Modal -->
+        <div id="alert-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Set Price Alert</h3>
+                    <button class="modal-close" id="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="form-label">Cryptocurrency</label>
+                        <input type="text" class="form-control" id="alert-coin" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Alert Price</label>
+                        <input type="number" class="form-control" id="alert-price" step="0.01" placeholder="Enter target price">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Alert Type</label>
+                        <select class="form-control" id="alert-type">
+                            <option value="above">Price goes above</option>
+                            <option value="below">Price goes below</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn--secondary" id="cancel-alert">Cancel</button>
+                    <button class="btn btn--primary" id="set-alert">Set Alert</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notifications -->
+        <div id="notifications" class="notifications"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

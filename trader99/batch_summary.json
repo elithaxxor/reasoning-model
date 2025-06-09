@@ -1,0 +1,68 @@
+{
+  "summary": {
+    "success": 1,
+    "failures": 0,
+    "total_cost": 0.000238,
+    "total_time": 13.648313045501709
+  },
+  "results": [
+    {
+      "pair": "BTC/USD",
+      "ta": {
+        "model": "o4-mini-high",
+        "prompt": "RSI divergence check for BTC/USD: [44.58649416 49.72072852 50.48630049 59.3622632  61.81922423 61.41096684\n 61.69143284 62.22365561 62.51741056 61.99821717 63.18552806 63.44393115\n 64.49595999 65.40405249 64.16892535 64.16892535 64.16892535 64.16892535\n 64.16892535 64.16892535 40.35294452 42.50846744 49.5355062  49.51879304\n 49.53712879 56.20154313 57.09567393 57.24409334 57.26178417 57.134491\n 57.134491   56.55129817 56.55129817 45.03554495 40.18100122 28.88270503\n 37.57944541 40.89144005 46.28698873 49.84210047 49.86005976 50.60290869\n 50.60290869 50.58062405 50.60405048 51.51976487 73.70000668 66.71759093\n 35.5200421  34.2584567 ]",
+        "response": "{\"error\": \"Error code: 404 - {'error': {'message': 'The model `o4-mini-high` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}\"}",
+        "metrics": {
+          "elapsed_s": 3.411994695663452,
+          "est_cost_usd": 3.4e-05
+        }
+      },
+      "macro": {
+        "model": "gpt-4.1",
+        "prompt": "VWAP/macro pattern analysis for BTC/USD",
+        "response": "{\"error\": \"Error code: 403 - {'error': {'message': 'Project `proj_ESbcsASn6zwvygPHEEOHRjad` does not have access to model `gpt-4.1`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}\"}",
+        "metrics": {
+          "elapsed_s": 3.3514082431793213,
+          "est_cost_usd": 2.7e-05
+        }
+      },
+      "options": {
+        "model": "o3-pro",
+        "prompt": "Calculate Black\u2011Scholes params for BTC/USD",
+        "response": "{\"error\": \"Error code: 403 - {'error': {'message': 'Project `proj_ESbcsASn6zwvygPHEEOHRjad` does not have access to model `o3-pro`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}\"}",
+        "metrics": {
+          "elapsed_s": 3.3768579959869385,
+          "est_cost_usd": 0.000142
+        }
+      },
+      "sentiment": {
+        "model": "gpt-4.5",
+        "prompt": "Fear/greed sentiment from last 200 tweets for BTC/USD",
+        "response": "{\"error\": \"Error code: 404 - {'error': {'message': 'The model `gpt-4.5` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}\"}",
+        "metrics": {
+          "elapsed_s": 3.508052110671997,
+          "est_cost_usd": 3.5e-05
+        }
+      },
+      "consensus_signal": "SELL",
+      "metrics": {
+        "ta": {
+          "elapsed_s": 3.411994695663452,
+          "est_cost_usd": 3.4e-05
+        },
+        "macro": {
+          "elapsed_s": 3.3514082431793213,
+          "est_cost_usd": 2.7e-05
+        },
+        "options": {
+          "elapsed_s": 3.3768579959869385,
+          "est_cost_usd": 0.000142
+        },
+        "sentiment": {
+          "elapsed_s": 3.508052110671997,
+          "est_cost_usd": 3.5e-05
+        }
+      }
+    }
+  ]
+}

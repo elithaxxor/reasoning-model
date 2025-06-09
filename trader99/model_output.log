@@ -1,0 +1,219 @@
+2025-06-08 17:15:52,886 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-06-08 17:16:23,035 WARNING:Retry 1/3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-06-08 17:16:23,139 WARNING:Retry 1/3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-06-08 17:16:24,061 WARNING:Retry 2/3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-06-08 17:16:24,260 WARNING:Retry 2/3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-06-08 17:16:26,081 WARNING:Retry 3/3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-06-08 17:16:26,081 ERROR:OHLCV/RSI error for BTC: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-06-08 17:16:26,280 WARNING:Retry 3/3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-06-08 17:16:26,280 ERROR:OHLCV/RSI error for USDT: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-06-08 17:17:07,603 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-06-08 17:17:21,285 WARNING:Retry 1/3 failed: coinbase does not have market symbol BTC
+2025-06-08 17:17:21,621 WARNING:Retry 1/3 failed: coinbase does not have market symbol USDT
+2025-06-08 17:17:22,288 WARNING:Retry 2/3 failed: coinbase does not have market symbol BTC
+2025-06-08 17:17:22,624 WARNING:Retry 2/3 failed: coinbase does not have market symbol USDT
+2025-06-08 17:17:24,289 WARNING:Retry 3/3 failed: coinbase does not have market symbol BTC
+2025-06-08 17:17:24,289 ERROR:OHLCV/RSI error for BTC: coinbase does not have market symbol BTC
+2025-06-08 17:17:24,626 WARNING:Retry 3/3 failed: coinbase does not have market symbol USDT
+2025-06-08 17:17:24,626 ERROR:OHLCV/RSI error for USDT: coinbase does not have market symbol USDT
+2025-06-08 17:17:51,287 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-06-08 17:18:33,592 ERROR:OHLCV/RSI error for BTC/USDT: Argument 'real' has incorrect type (expected numpy.ndarray, got list)
+2025-06-08 17:20:05,947 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-06-08 17:20:24,005 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:20:24,007 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'The model `o4-mini-high` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:20:25,393 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:20:25,393 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'The model `o4-mini-high` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:20:27,520 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:20:27,523 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'The model `o4-mini-high` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:20:46,552 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-08 17:20:46,678 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:20:46,679 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'The model `o3-pro` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:20:47,812 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:20:47,812 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'The model `o3-pro` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:20:49,943 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:20:49,944 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'The model `o3-pro` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:20:50,087 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:20:50,087 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'The model `gpt-4.5` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:20:51,234 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:20:51,235 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'The model `gpt-4.5` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:20:53,354 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:20:53,356 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'The model `gpt-4.5` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:27:58,884 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-06-08 17:28:09,445 ERROR:OHLCV/RSI error for BTC/USDT: 
+2025-06-08 17:28:27,833 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-06-08 17:28:41,983 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:28:41,985 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'The model `o4-mini-high` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:28:43,123 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:28:43,124 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'The model `o4-mini-high` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:28:45,256 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:28:45,257 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'The model `o4-mini-high` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:28:59,722 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-08 17:28:59,881 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:28:59,881 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'The model `o3-pro` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:29:01,000 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:29:01,000 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'The model `o3-pro` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:29:03,139 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:29:03,140 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'The model `o3-pro` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:29:03,261 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:29:03,262 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'The model `gpt-4.5` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:29:04,416 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:29:04,416 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'The model `gpt-4.5` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:29:06,562 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:29:06,563 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'The model `gpt-4.5` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:38:51,869 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-06-08 17:39:17,905 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 17:39:17,908 WARNING:Retry 1/3 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-06-08 17:39:19,058 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 17:39:19,058 WARNING:Retry 2/3 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-06-08 17:39:21,208 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 17:39:21,209 WARNING:Retry 3/3 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-06-08 17:39:36,853 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-08 17:39:37,460 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:39:37,461 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'The model `o3-pro` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:39:38,584 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:39:38,584 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'The model `o3-pro` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:39:40,778 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 17:39:40,788 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'The model `o3-pro` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 17:39:45,846 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-08 17:42:30,663 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-06-08 17:42:48,951 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 17:42:48,954 WARNING:Retry 1/3 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-06-08 17:42:50,113 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 17:42:50,114 WARNING:Retry 2/3 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-06-08 17:42:52,631 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 17:42:52,632 WARNING:Retry 3/3 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-06-08 17:43:23,159 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-08 17:43:23,310 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 17:43:23,310 WARNING:Retry 1/3 failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-08 17:43:24,923 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 17:43:24,923 WARNING:Retry 2/3 failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-08 17:43:27,123 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 17:43:27,123 WARNING:Retry 3/3 failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-08 17:43:31,914 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-08 17:44:50,677 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-06-08 17:59:55,740 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-06-08 18:00:11,278 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:00:11,282 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:00:12,710 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:00:12,711 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:00:14,974 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:00:14,974 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:00:15,117 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:00:15,117 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:00:16,794 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:00:16,794 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:00:18,935 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:00:18,936 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:00:19,060 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:00:19,061 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:00:20,196 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:00:20,196 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:00:22,323 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:00:22,323 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:00:22,443 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:00:22,444 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:00:23,800 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:00:23,801 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:00:25,940 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:00:25,940 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:01:47,826 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-06-08 18:01:56,312 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-06-08 18:02:04,350 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:02:04,351 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:02:05,531 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:02:05,531 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:02:07,726 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:02:07,729 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:02:08,145 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:02:08,145 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:02:09,279 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:02:09,280 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:02:11,461 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:02:11,462 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:02:11,615 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:02:11,616 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:02:12,798 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:02:12,799 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:02:14,981 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:02:14,981 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:02:15,153 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:02:15,153 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:02:16,303 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:02:16,304 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:02:18,472 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:02:18,472 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:03:48,545 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-06-08 18:03:58,558 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 18:03:58,559 WARNING:Retry 1/3 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-06-08 18:03:59,705 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 18:03:59,706 WARNING:Retry 2/3 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-06-08 18:04:01,863 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 18:04:01,863 WARNING:Retry 3/3 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-06-08 18:04:02,005 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:04:02,005 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:04:03,163 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:04:03,163 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:04:05,323 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:04:05,323 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:04:05,484 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 18:04:05,485 WARNING:Retry 1/3 failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-08 18:04:06,656 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 18:04:06,656 WARNING:Retry 2/3 failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-08 18:04:08,813 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-06-08 18:04:08,813 WARNING:Retry 3/3 failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-08 18:04:08,953 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:04:08,954 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:04:10,091 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:04:10,091 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:04:12,239 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:04:12,240 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-06-08 18:05:19,957 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-06-08 18:05:28,280 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:05:28,282 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'The model `o4-mini-high` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 18:05:29,402 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:05:29,402 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'The model `o4-mini-high` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 18:05:31,520 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:05:31,521 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'The model `o4-mini-high` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 18:05:31,643 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2025-06-08 18:05:31,643 WARNING:Retry 1/3 failed: Error code: 403 - {'error': {'message': 'Project `proj_ESbcsASn6zwvygPHEEOHRjad` does not have access to model `gpt-4.1`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 18:05:32,758 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2025-06-08 18:05:32,759 WARNING:Retry 2/3 failed: Error code: 403 - {'error': {'message': 'Project `proj_ESbcsASn6zwvygPHEEOHRjad` does not have access to model `gpt-4.1`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 18:05:34,871 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2025-06-08 18:05:34,873 WARNING:Retry 3/3 failed: Error code: 403 - {'error': {'message': 'Project `proj_ESbcsASn6zwvygPHEEOHRjad` does not have access to model `gpt-4.1`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 18:05:34,992 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2025-06-08 18:05:34,993 WARNING:Retry 1/3 failed: Error code: 403 - {'error': {'message': 'Project `proj_ESbcsASn6zwvygPHEEOHRjad` does not have access to model `o3-pro`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 18:05:36,111 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2025-06-08 18:05:36,112 WARNING:Retry 2/3 failed: Error code: 403 - {'error': {'message': 'Project `proj_ESbcsASn6zwvygPHEEOHRjad` does not have access to model `o3-pro`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 18:05:38,249 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2025-06-08 18:05:38,249 WARNING:Retry 3/3 failed: Error code: 403 - {'error': {'message': 'Project `proj_ESbcsASn6zwvygPHEEOHRjad` does not have access to model `o3-pro`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 18:05:38,442 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:05:38,443 WARNING:Retry 1/3 failed: Error code: 404 - {'error': {'message': 'The model `gpt-4.5` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 18:05:39,555 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:05:39,555 WARNING:Retry 2/3 failed: Error code: 404 - {'error': {'message': 'The model `gpt-4.5` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 18:05:41,757 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-08 18:05:41,758 WARNING:Retry 3/3 failed: Error code: 404 - {'error': {'message': 'The model `gpt-4.5` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-06-08 18:07:11,749 INFO:HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
